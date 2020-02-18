@@ -10,7 +10,7 @@ public class OrderMethods extends OrderImpl {
 		names.add("Salt");
 		names.add("Sugar");
 		names.add("Tea Powder");
-	
+	System.out.println(names);
 	}
 
 	public void fetchDistributorId() {
@@ -18,6 +18,7 @@ public class OrderMethods extends OrderImpl {
 		Ids.add(101);
 		Ids.add(102);
 		Ids.add(103);
+		System.out.println(Ids);
 	}
 	
 	public void fetchProductNames() {
@@ -25,7 +26,7 @@ public class OrderMethods extends OrderImpl {
 		names.add("Tea");
 		names.add("Banana Juice");
 		names.add("Butter Milk");
-	
+		System.out.println(names);
 	}
 	
 	public void fetchSupplierId() {
@@ -33,5 +34,6 @@ public class OrderMethods extends OrderImpl {
 		Ids.add(101);
 		Ids.add(102);
 		Ids.add(103);
+		System.out.println(Ids);
 	}
 }

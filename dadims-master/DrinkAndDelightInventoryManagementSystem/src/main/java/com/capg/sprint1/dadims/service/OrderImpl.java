@@ -12,6 +12,7 @@ Scanner in=new Scanner(System.in);
 		case 1:
 			System.out.println("Raw Materials Order");
 			OrderMethods info=new OrderMethods();
+			System.out.println("Display list of rawMaterials");
 			info.fetchRawMaterialNames();
 			info.fetchDistributorId();
 		    break;

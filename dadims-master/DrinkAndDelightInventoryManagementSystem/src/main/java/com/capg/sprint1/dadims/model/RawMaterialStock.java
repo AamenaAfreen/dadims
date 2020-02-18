@@ -1,6 +1,6 @@
 package com.capg.sprint1.dadims.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class RawMaterialStock {
 
@@ -8,7 +8,7 @@ public class RawMaterialStock {
 	String name;
 	double price_per_unit;
 	double quantityValue;
-	String quantityUnit;
+	int quantityUnit;
 	double price;
 	String warehouseId;
 	Date deliveryDate;
@@ -22,7 +22,7 @@ public class RawMaterialStock {
 	}
 
 	public RawMaterialStock(String orderId, String name, double price_per_unit, double quantityValue,
-			String quantityUnit, double price, String warehouseId, Date deliveryDate, Date manufacturingDate,
+			int quantityUnit, double price, String warehouseId, Date deliveryDate, Date manufacturingDate,
 			Date expiryDate, String qualityCheck, Date processDate) {
 		super();
 		this.orderId = orderId;
@@ -39,6 +39,7 @@ public class RawMaterialStock {
 		this.processDate = processDate;
 	}
 
+	
 	public String getOrderId() {
 		return orderId;
 	}
@@ -71,11 +72,11 @@ public class RawMaterialStock {
 		this.quantityValue = quantityValue;
 	}
 
-	public String getQuantityUnit() {
+	public int getQuantityUnit() {
 		return quantityUnit;
 	}
 
-	public void setQuantityUnit(String quantityUnit) {
+	public void setQuantityUnit(int quantityUnit) {
 		this.quantityUnit = quantityUnit;
 	}
 
